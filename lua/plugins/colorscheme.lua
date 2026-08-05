@@ -1,4 +1,5 @@
 return {
+  --[[
   {
     "folke/tokyonight.nvim",
     lazy = true,
@@ -10,7 +11,8 @@ return {
       colorscheme = "tokyonight",
     },
   },
-  --[[{
+  ]]
+  {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
     config = true,
@@ -20,7 +22,7 @@ return {
     opts = {
       colorscheme = "gruvbox",
     },
-  },]]
+  },
   --[[{
     "catppuccin/nvim",
     lazy = true,
