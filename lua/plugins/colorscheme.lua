@@ -1,5 +1,32 @@
 return {
+  {
+    'b0o/lavi',
+    lazy = false,
+    priority = 1000,
+    init = function()
+      vim.g.lavi_config = {
+        transparent = true,
+      }
+    end,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "lavi"
+    },
+  },
   --[[
+  {
+    "shaunsingh/nord.nvim",
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "nord",
+    },
+  },
   {
     "folke/tokyonight.nvim",
     lazy = true,
@@ -11,7 +38,6 @@ return {
       colorscheme = "tokyonight",
     },
   },
-  ]]
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
@@ -23,7 +49,7 @@ return {
       colorscheme = "gruvbox",
     },
   },
-  --[[{
+  {
     "catppuccin/nvim",
     lazy = true,
     name = "catppuccin",
@@ -69,5 +95,6 @@ return {
     opts = {
       colorscheme = "catppuccin",
     },
-  },]]
+  },
+  ]]
 }
